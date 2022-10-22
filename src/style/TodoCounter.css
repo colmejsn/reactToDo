@@ -1,0 +1,44 @@
+/* body {
+    background: #001224;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  } */
+
+.div2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.TodoCounter {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: transparent;
+    background: url("https://wweb.dev/resources/creative-hover-effects/stripes.png") repeat #fff;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-clip: border-box;
+    background-size: 100%;
+    background-position: 0%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: stripeAnimation 3s linear infinite;
+    animation: stripeAnimation 3s linear infinite;
+    animation-play-state: running;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.TodoCounter:hover {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@keyframes stripeAnimation {
+    100% {
+        background-position-y: -200%;
+    }
+}
